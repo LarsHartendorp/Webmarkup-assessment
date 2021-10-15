@@ -1,0 +1,22 @@
+
+/* Responsive layout - pc */
+@media (min-width: 1280px) 
+{
+  body {
+    background-color: #FFCBDD;
+  }
+}
+/* Responsive layout - tablet */
+@media (min-device-width: 481px) and (max-device-width: 1179px)
+{
+  body {
+    background-color: #FB4B4E;
+  }
+}
+/* Responsive layout - mobile */
+@media (max-width: 480px) 
+{
+  body {
+    background-color: #7C0B2B;
+  }
+}
