@@ -1,14 +1,43 @@
 /* Responsive layout - pc */
 @media (min-width: 1180px) 
 {
+   #headlogo
+  {
+	  width: 100px;
+	  height: 100px;
+  }
+  .video
+  {
+	  background-color: #A1CDF4
+  }
+
+  .firstArticleSection
+  {
+	  background-color: #EEF4D4;
+  }
+  .secondArticleSection
+  {
+	  background-color: #DAEFB3;
+  }
+    .thirdArticleSection
+  {
+	  background-color: #EA9E8D;
+  }
+  #ArticleImages
+  {
+	  width: 500px;
+	  height: 250px;
+  }
   body 
   {
     background-color: #FFCBDD;
   }
-  img
+  /*img
   {
 	  float: right;
   }
+  */
+  
 }
 /* Responsive layout - tablet */
 @media (min-width: 481px) and (max-width: 1179px)
@@ -16,10 +45,6 @@
   body 
   {
     background-color: #FB4B4E;
-  }
-  img
-  {
-	  float: left;
   }
 }
 /* Responsive layout - mobile */
