@@ -1,22 +1,33 @@
-
 /* Responsive layout - pc */
-@media (min-width: 1280px) 
+@media (min-width: 1180px) 
 {
-  body {
+  body 
+  {
     background-color: #FFCBDD;
+  }
+  img
+  {
+	  float: right;
   }
 }
 /* Responsive layout - tablet */
-@media (min-device-width: 481px) and (max-device-width: 1179px)
+@media (min-width: 481px) and (max-width: 1179px)
 {
-  body {
+  body 
+  {
     background-color: #FB4B4E;
+  }
+  img
+  {
+	  float: left;
   }
 }
 /* Responsive layout - mobile */
 @media (max-width: 480px) 
 {
-  body {
+  body 
+  {
     background-color: #7C0B2B;
   }
+  /* img floatoing; Mobile: under the article and image is centred with margin.   */
 }
