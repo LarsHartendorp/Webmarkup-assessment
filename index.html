@@ -15,18 +15,19 @@
 <body>
 <section id = "header">
 	<header>
+		<img src = "img/headlogo.png" alt=logowebsite id="headlogo"> <!--make id for all logo/img???-->
 		<h1>TravelEverywhere</h1>
 		<h2>Discover the world!</h2>
-			<img src = "img/headlogo.png" alt=logowebsite id="headlogo"> <!--make id for all logo/img???-->
 	</header>
 </section>
 	
 		<nav id="menuNavigation"> <!-- maybe better name? -->
 				 MENU    <!-- make unordered list-->	
-				<a href="index.html"><li>Home</li></a> <!--link to home page-->
-				<a href="bestdestinations.html"><li>Best destinations</li></a> <!--link to 2nd page-->
-				<a href="tickets.html"><li>Tickets</li></a> <!--link to 3rd page-->
-				<a href="contact.html"><li>Contact</li></a> <!--link to 4th page-->
+				
+				<a href="index.html"><li>&nbsp;Home&nbsp;</li></a> <!--link to home page-->
+				<a href="bestdestinations.html"><li>&nbsp;Best destinations&nbsp;</li></a> <!--link to 2nd page-->
+				<a href="tickets.html"><li>&nbsp;Tickets&nbsp;</li></a> <!--link to 3rd page-->
+				<a href="contact.html"><li>&nbsp;Contact&nbsp;</li></a> <!--link to 4th page-->
 			</ul>
 		</nav>
 <section class="video" id="videoFormat"> <!-- make a section? for video -->
@@ -36,7 +37,7 @@
 	</video>
 </section> <!-- section endtag? -->
 
-<section class="firstArticleSection"> <!-- section on top? -->
+<section class="flexParent"> <!-- section on top? -->
 	<article id="firstArticle"> <!-- article on top? -->
 		<h3>Berlijn</h3>
 			<p class= "firstArticleText">
@@ -46,7 +47,7 @@
             </p>         
 			<figure>
 				<a href="https://www.tripadvisor.nl/Attractions-g187323-Activities-Berlin.html">
-					<img src = "img/berlin.jpg" alt=firstArticleimg id="ArticleImages" /> 
+					<img src = "img/berlin.jpg" alt=firstArticleimg class="imgFlex" /> 
 				</a> <!-- id for all img? -->
                     <footer>
 						<figcaption>&copy; 2021 Lars Hartendorp</figcaption> <!-- My copyright? -->
@@ -55,7 +56,7 @@
 </section>
     </article>
 		
-<section class="secondArticleSection"> <!-- section on top? -->
+<section class="flexParent2"> <!-- section on top? -->
 	<article id="secondArticle"> <!-- article on top? -->
         <h3>Parijs</h3>
             <p class="secondArticleText"> <!-- maybe must be same as 'firstArticleText'? -->
@@ -64,7 +65,7 @@
 			<p> (Website is in het engels) </p>
             </p>
 				<a href="https://www.planetware.com/tourist-attractions-/paris-f-p-paris.htm">
-					<img src = "img/paris.jpg" alt=secondArticleimg id="ArticleImages" /> 
+					<img src = "img/paris.jpg" alt=secondArticleimg class="imgFlex" /> 
 				</a><!-- id for all img? -->
                   <footer>
 						<figcaption>&copy; 2021 Lars Hartendorp</figcaption> <!-- My copyright? -->
@@ -72,7 +73,7 @@
 </section>
     </article>
 		
-<section class="thirdArticleSection"> <!-- section on top? -->
+<section class="flexParent3"> <!-- section on top? -->
 	<article id="thirdArticle"> <!-- article on top? -->
         <h3>Rome</h3>
             <p class="thirdArticleText"> <!-- maybe must be same as 'firstArticleText'? -->
@@ -81,13 +82,30 @@
 			<p> (Website is in het engels) </p>
             </p>
 				<a href="https://www.planetware.com/tourist-attractions-/rome-i-la-r.htm">
-					<img src ="img/rome.jpeg" alt=thirdArticleimg id="ArticleImages" /> <!-- id for all img? -->
+					<img src ="img/rome.jpeg" alt=thirdArticleimg class="imgFlex" /> <!-- id for all img? -->
 				</a>
 					<footer>
 						<figcaption>&copy; 2021 Lars Hartendorp</figcaption> <!-- My copyright? -->
 					</footer>
             </section>
         </article>
+	<aside class="upcomingSection">
+		<p>5 upcoming routes</p>
+			<ol>
+				<li>Delhi, India</li>
+				<li>Shanghai, China</li>
+				<li>Cairo, Egypt</li>
+				<li>Beijing, China</li>
+				<li>Lagos, Nigeria</li>
+			</ol>
+	</aside>
+		<footer>
+		&copy; Lars Hartendorp
+		</footer>
+			<section id="CookieStatement">
+				<img src ="img/cookie.jpg" alt=cookiestatement id="cookieImg" />
+				Cookie statement
+			</section>
 </body>
 
 </html>

@@ -1,44 +1,131 @@
 /* Responsive layout - pc */
 @media (min-width: 1180px) 
 {
-   #headlogo
-  {
-	  width: 100px;
-	  height: 100px;
-  }
-  .video
-  {
-	  background-color: #A1CDF4
-  }
-
-  .firstArticleSection
-  {
-	  background-color: #EEF4D4;
-  }
-  .secondArticleSection
-  {
-	  background-color: #DAEFB3;
-  }
-    .thirdArticleSection
-  {
-	  background-color: #EA9E8D;
-  }
-  #ArticleImages
-  {
-	  width: 500px;
-	  height: 250px;
-  }
-  body 
-  {
-    background-color: #FFCBDD;
-  }
-  /*img
-  {
-	  float: right;
-  }
-  */
-  
+#header
+{
+	background-color: #A10;	
+	border-width: 5px;
+	border-style: dashed;
+	border-color: #FFF;
 }
+#headlogo
+{
+	width: 100px;
+	height: 100px;
+}
+#menuNavigation
+{
+	background-color: #F38;	
+	border-width: 5px;
+	border-style: solid;
+	border-color: #015;
+	display: flex;
+	flex-flow: row;
+}
+.video
+{
+	background-color: #A1CDF4;
+	border-width: 1em;
+	border-color: #F90; 
+	border-style: solid; 
+}
+.flexParent
+{
+	background-color: #EEF4D4;
+	display: flex;
+	flex-wrap: wrap;
+	width: 98.5%;
+	border-width: 1em;
+	border-color: #A30; 
+	border-style: solid; 
+}
+#firstArticle
+{
+	background-color: #88F;
+	flex-basis: 30%;
+	flex-shrink: 1; 
+	flex-grow: 1;
+}
+/*.firstArticleText
+{
+	
+}*/
+.imgFlex 
+{
+    width: 200px;
+    float: centred;
+    position: flex;
+}
+.flexParent2
+{
+	background-color: #ff7f50;
+	display: flex;
+	flex-wrap: wrap;
+	width: 98.5%;
+	border-width: 1em;
+	border-color: #F12; 
+	border-style: solid;  
+}
+#secondArticle
+{
+	background-color: #ffeff3;
+	flex-basis: 30%;
+	flex-shrink: 1; 
+	flex-grow: 1;
+}
+.flexParent3
+{
+	background-color: #EA9E8D;
+	display: flex;
+	flex-wrap: wrap;
+	width: 98.5%;
+	border-width: 1em;
+	border-color: #C40; 
+    border-style: solid;
+}
+#thirdArticle
+{
+	background-color: #b0e0e6;
+	flex-basis: 30%;
+	flex-shrink: 1; 
+	flex-grow: 1;
+}
+  .upcomingSection
+{
+	background-color: #8bc34a;
+	border: solid;
+	border-color: #000;
+	position: fixed;
+	top: 30%;
+	right: 0;
+	height: 90%;
+	width: 25%
+}
+#CookieStatement 
+{
+
+	background-color: #000;
+	position: fixed;
+	right: 0%;
+	bottom: 0;
+	width: 25%;
+	color: #FFF;
+	opacity: 50%;
+	background-color: #FA0;
+}
+#cookieImg
+{
+	height: 2.8%;
+	width: 1.4%;
+	position: fixed;
+	right: 15.5%;
+	bottom: 0;
+}
+body 
+{
+    background-color: #FFCBDD;
+}
+
 /* Responsive layout - tablet */
 @media (min-width: 481px) and (max-width: 1179px)
 {
