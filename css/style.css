@@ -6,6 +6,7 @@
 }
 /* Responsive layout - pc */
 @media (min-width: 1180px) 
+/*index.html*/
 {
 #header
 {
@@ -43,7 +44,7 @@
 {
 	background-color: #EEF4D4;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	width: 72.6%;
 	border-width: 1em;
 	border-color: #A30; 
@@ -55,12 +56,13 @@
 	background-color: #88F;
 	flex-basis: 30%;
 	flex-shrink: 1; 
-	flex-grow: 1;
-}
-/*.firstArticleText
-{
+	flex-grow: 1
 	
-}*/
+}
+.articleText
+{
+	padding-left: 5px;
+}
 .imgFlex 
 {
     width: 200px;
@@ -77,32 +79,12 @@ figcaption
 	position: relative;
 	right: -150px;
 }
-.flexParent2
-{
-	background-color: #ff7f50;
-	display: flex;
-	flex-wrap: wrap;
-	width: 72.6%;
-	border-width: 1em;
-	border-color: #F12; 
-	border-style: solid;  
-}
 #secondArticle
 {
 	background-color: #ffeff3;
 	flex-basis: 30%;
 	flex-shrink: 1; 
 	flex-grow: 1;
-}
-.flexParent3
-{
-	background-color: #EA9E8D;
-	display: flex;
-	flex-wrap: wrap;
-	width: 72.6%;
-	border-width: 1em;
-	border-color: #C40; 
-    border-style: solid;
 }
 #thirdArticle
 {
@@ -139,14 +121,6 @@ figcaption
 	opacity: 50%;
 	background-color: #FA0;
 }
-#cookieImg
-{
-	height: 2.8%;
-	width: 1.4%;
-	position: fixed;
-	right: 15.5%;
-	bottom: 0;
-}
 body 
 {
     background-color: #FFCBDD;
@@ -155,6 +129,7 @@ body
 
 /* Responsive layout - tablet */
 @media (min-width: 481px) and (max-width: 1179px)
+/*index.html*/
 {
 #header
 {
@@ -197,12 +172,13 @@ body
 {
 	background-color: #EEF4D4;
 	display: flex;
-	flex-wrap: wrap;
-	width: 72.6%;
+	flex-direction: column-reverse;
+	width: 93%;
 	border-width: 1em;
-	border-color: #A30; 
-	border-style: solid; 
-	
+	border-color: #123; 
+	border-style: double; 
+	position: relative;
+	top: 333px;	
 }
 #firstArticle
 {
@@ -212,31 +188,25 @@ body
 	flex-shrink: 1; 
 	flex-grow: 1;
 }
+.articleText
+{
+	text-align: right;
+	padding-right: 30px;
+}
 .imgFlex 
 {
     width: 200px;
-    float: right;
+    float: left;
 	position: relative;
 	top: -30px;
-	right: 30px;
-	
+	left: 30px;	
 }
 figcaption 
 {
-    text-align: right;
+    text-align: left;
 	padding-top: 100px;
 	position: relative;
-	right: -150px;
-}
-.flexParent2
-{
-	background-color: #ff7f50;
-	display: flex;
-	flex-wrap: wrap;
-	width: 72.6%;
-	border-width: 1em;
-	border-color: #F12; 
-	border-style: solid;  
+	left: -150px;
 }
 #secondArticle
 {
@@ -244,16 +214,6 @@ figcaption
 	flex-basis: 30%;
 	flex-shrink: 1; 
 	flex-grow: 1;
-}
-.flexParent3
-{
-	background-color: #EA9E8D;
-	display: flex;
-	flex-wrap: wrap;
-	width: 72.6%;
-	border-width: 1em;
-	border-color: #C40; 
-    border-style: solid;
 }
 #thirdArticle
 {
@@ -281,7 +241,6 @@ figcaption
 }
 #CookieStatement 
 {
-
 	background-color: #000;
 	position: fixed;
 	right: 0%;
@@ -291,26 +250,150 @@ figcaption
 	opacity: 50%;
 	background-color: #FA0;
 }
-#cookieImg
+body 
 {
-	height: 2.8%;
-	width: 1.4%;
+    background-color: #FFCBDD;
+}
+footer
+{
+	position: relative;
+	padding-top: 333px;
+}
+}
+
+/* Responsive layout - mobile */  /* eventueel max-device-width*/ 
+@media (max-device-width: 480px)
+/*index.html*/ 
+{
+#header
+{
+	background-color: #A10;	
+	border-width: 5px;
+	border-style: dashed;
+	border-color: #FFF;
+}
+#headlogo
+{
+	width: 100px;
+	height: 100px;
+}
+#menuNavigation
+{
+	background-color: #F38;	
+	border-width: 5px;
+	border-style: solid;
+	border-color: #015;
+	display: flex;
+	flex-flow: column;
+}
+.upcomingSection
+{
+	background-color: #8bc34a;
+	border: solid;
+	border-color: #000;
+	position: absolute;
+	top: 270px;
+	height: 16%
+
+}
+.upcomingText
+{
+	text-align: left;
+	padding: 20px;
+	padding-right: 40px;
+}
+.video
+{
+	display: none;
+	width: 93%;
+	background-color: #A1CDF4;
+	border-width: 1em;
+	border-color: #F65; 
+	border-style: solid; 
+	position: relative;
+	top: 333px;
+
+}
+.videoFormat
+{
+	display: none;
+	width: 450px;
+	height: 300px;
+}
+.flexParent
+{
+	background-color: #EEF4D4;
+	display: flex;
+	flex-direction: column-reverse;
+	width: 97%;
+	border-width: 1em;
+	border-color: #123; 
+	border-style: double; 
+	position: relative;
+	
+	
+}
+#firstArticle
+{
+	background-color: #88F;
+	flex-wrap: wrap;
+	flex-basis: 30%;
+	flex-shrink: 1; 
+	flex-grow: 1;
+}
+.articleText
+{
+	text-align: right;
+	padding-right: 30px;
+}
+.imgFlex 
+{
+    width: 200px;
+    float: left;
+	position: relative;
+	top: -30px;
+	left: 30px;
+}
+figcaption 
+{
+    text-align: left;
+	padding-top: 100px;
+	position: relative;
+	left: -150px;
+}
+#secondArticle
+{
+	background-color: #ffeff3;
+	flex-basis: 30%;
+	flex-shrink: 1; 
+	flex-grow: 1;
+}
+#thirdArticle
+{
+	background-color: #b0e0e6;
+	flex-basis: 30%;
+	flex-shrink: 1; 
+	flex-grow: 1;
+}
+
+#CookieStatement 
+{
+	background-color: #000;
 	position: fixed;
-	right: 15.5%;
+	right: 0%;
 	bottom: 0;
+	width: 25%;
+	color: #FFF;
+	opacity: 50%;
+	background-color: #FA0;
 }
 body 
 {
     background-color: #FFCBDD;
 }
-}
-}
-/* Responsive layout - mobile */  /* eventueel max-device-width*/ 
-@media (max-width: 480px) 
+footer
 {
-  body 
-  {
-    background-color: #7C0B2B;
-  }
-  /* img floatoing; Mobile: under the article and image is centred with margin.   */
+	position: relative;
+	padding-top: 333px;
+}
 }
