@@ -11,21 +11,20 @@
 		<title>TravelEverywhere.nl</title>
 	</head>
 <body>
-<section id = "header">
+<section id="All-flexParent">
+<section id = "headerParent">
 	<header>
 		<img src = "img/headlogo.png" alt=logowebsite id="headlogo"> <!--make id for all logo/img???-->
-		<h1>TravelEverywhere</h1>
-		<h2>Discover the world!</h2>
+		<h1 id="indexh1">TravelEverywhere</h1>
+		<h2 id="indexh2">Discover the world!</h2>
 	</header>
 </section>
-	
+
 		<nav id="menuNavigation"> <!-- maybe better name? -->
-				 MENU    <!-- make unordered list-->	
-				
-				<li><a href="index.html">&nbsp;Home&nbsp;</li></a> <!--link to home page-->
-				<li><a href="bestdestinations.html">&nbsp;Best destinations&nbsp;</li></a> <!--link to 2nd page-->
-				<li><a href="tickets.html">&nbsp;Tickets&nbsp;</li></a> <!--link to 3rd page-->
-				<li><a href="contact.html">&nbsp;Contact&nbsp;</li></a> <!--link to 4th page-->
+			<ul class= "menu">
+				<li class ="item"><a href="bestdestinations.html"> Best destinations&nbsp;</a></li> <!--link to 2nd page-->
+				<li class="item"><a href="tickets.html">&nbsp;Tickets&nbsp;</a></li> <!--link to 3rd page-->
+				<li class="item"><a href="contact.html">&nbsp;Contact&nbsp;</a></li> <!--link to 4th page-->
 			</ul>
 		</nav>
 <section class="video" id="videoFormat"> <!-- make a section? for video -->
@@ -37,10 +36,15 @@
 
 
 <section class="flexParent"> <!-- section on top? -->
-	<article id="firstArticle"> <!-- article on top? -->
+	<article id="firstChild"> <!-- article on top? -->
 		<h3>Berlijn</h3>
 			<p class= "articleText">
-			Hier komt allemaal tekst nog te staan....
+			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+			ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+			sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+			adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+			quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+			qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
             <a href="https://www.tripadvisor.nl/Attractions-g187323-Activities-Berlin.html"> <br> Druk op de link om de beste touristenattracties te zien in Berlijn </a>
             </p>         
 			<figure>
@@ -53,34 +57,42 @@
     </article>
 		
 
-	<article id="secondArticle"> <!-- article on top? -->
+	<article id="secondChild"> <!-- article on top? -->
         <h3>Parijs</h3>
             <p class="articleText"> <!-- maybe must be same as 'firstArticleText'? -->
-            Hier komt allemaal tekst nog te staan.... (Website is in het engels)
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+			ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+			sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+			adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+			quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+			qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
             <a href="https://www.planetware.com/tourist-attractions-/paris-f-p-paris.htm"> <br> Druk op de link om de beste touristenattracties te zien in Parijs.</a>
             </p>
 				<a href="https://www.planetware.com/tourist-attractions-/paris-f-p-paris.htm">
 					<img src = "img/paris.jpg" alt=secondArticleimg class="imgFlex" /> 
 				</a><!-- id for all img? -->
 					<figcaption>&copy; 2021 Lars Hartendorp</figcaption> <!-- My copyright? -->
-					
-
     </article>
 		
 
-	<article id="thirdArticle"> <!-- article on top? -->
+	<article id="thirdChild"> <!-- article on top? -->
         <h3>Rome</h3>
             <p class="articleText"> <!-- maybe must be same as 'firstArticleText'? -->
-            Hier komt allemaal tekst nog te staan.... (Website is in het engels) 
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+			ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+			sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+			adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+			quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+			qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
             <a href="https://www.planetware.com/tourist-attractions-/rome-i-la-r.htm"> <br> Druk op de link om de beste touristenattracties te zien in Rome.</a>
             </p>
 				<a href="https://www.planetware.com/tourist-attractions-/rome-i-la-r.htm">
 					<img src ="img/rome.jpeg" alt=thirdArticleimg class="imgFlex" /> <!-- id for all img? -->
 				</a>
 						<figcaption>&copy; 2021 Lars Hartendorp</figcaption> <!-- My copyright? -->
-            </section>
+</section>
         </article>
-	<aside class="upcomingSection">
+	<aside id="upcomingSection">
 		<p class="upcomingText">5 upcoming routes</p>
 			<ol class="upcomingText">
 				<li>Delhi, India</li> <p>Deze plek bevindt zich in India, Azië.</p>
@@ -90,6 +102,7 @@
 				<li>Lagos, Nigeria</li> <p>Deze plek bevindt zich in Nigeria, Afrika.</p>
 			</ol>
 	</aside>
+</section>
 		<footer>
 		&copy; Lars Hartendorp
 		</footer>
