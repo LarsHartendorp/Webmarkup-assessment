@@ -1,3 +1,7 @@
+tr:nth-child(even) {
+	background-color: #dddddd;
+
+}
 /* Responsive layout - pc */
 @media (min-width: 1180px) {
 /*index.html*/
@@ -135,7 +139,7 @@ body
 }
 #headlogo
 {
-	width: au
+	width: 100px;
 }
 #best-menuNavigation
 {
@@ -201,6 +205,115 @@ body
 {
 	grid-area: cookieTag;
 }
+
+/*tickets.html PC*/
+#tickets-grid-container
+{
+	width: 100%;
+	display: grid;
+	
+	grid-template-columns: auto auto 33%;
+	grid-template-areas:
+	'headerTag 		headerTag 		headerTag'
+	'h1Tag 			h1Tag 			h1Tag'
+	'h2Tag 			h2Tag 			h2Tag'
+	'menuTag 		menuTag 		menuTag'
+	'ticketTag		ticketTag 		ticketTag'
+	'tableTag 		tableTag 		asideTag'
+	'tableTag 		tableTag 		product1Tag'
+	'tableTag 		tableTag 		product2Tag'
+	'tableTag 		tableTag 		product3Tag' 
+	'copyrightTag 	copyrightTag 	copyrightTag'
+	'footerTag 		footerTag 		cookieTag' ;
+
+
+}
+#tickets-header
+{
+	grid-area: headerTag;
+	background-color: #123;
+}
+#headlogo
+{
+	width: 100px;
+}
+#ticketsh1
+{
+	grid-area: h1Tag;
+}
+#ticketsh2
+{
+	grid-area: h2Tag;
+}
+#tickets-navMenu
+{
+	grid-area: menuTag;
+	background-color: yellow;
+	display: flex;
+	flex-direction: column;
+}
+#tickets-column
+{
+	background-color: yellow;
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#ticketsInfo
+{
+	grid-area: ticketTag;
+	background-color: #88F;
+}
+#flightTable
+{
+	grid-area: tableTag;
+	background-color: #F65;
+}
+#copyright
+{
+	grid-area: copyrightTag;
+	background-color: aquamarine;
+}
+#tickets-3images
+{
+	grid-area: asideTag;
+	background-color: chartreuse;
+}
+#tickets-firstProduct
+{
+	grid-area: product1Tag;
+	width: 60%;
+	
+}
+#tickets-secondProduct
+{
+	grid-area: product2Tag;
+	width: 60%;
+
+}
+#tickets-thirdProduct
+{
+	grid-area: product3Tag;
+	width: 60%;
+	
+}
+#tickets-footer
+{
+	grid-area: footerTag;
+	background-color: blueviolet;
+}
+#CookieStatement
+{
+	grid-area: cookieTag;
+	background-color: #000;
+	color: #FFF;
+	opacity: 50%;
+	background-color: #FA0;
+}
+
+
 }
 /* Responsive layout - tablet */
 @media (min-width: 481px) and (max-width: 1179px){
@@ -358,7 +471,7 @@ footer
 	position: relative;
 	padding-top: 333px;
 }
-/*bestdestinations.html*/
+/*bestdestinations.html Tablet*/
 
 #bestdestinations-grid-container
 {
@@ -467,6 +580,123 @@ footer
 #CookieStatement
 {
 	grid-area: cookieTag;
+	background-color: #000;
+	position: fixed;
+	right: 0%;
+	bottom: 0;
+	width: 25%;
+	color: #FFF;
+	opacity: 50%;
+	background-color: #FA0;
+}
+
+/*tickets.html Tablet*/
+#tickets-grid-container
+{
+	width: 100%;
+	display: grid;
+	
+	grid-template-columns: auto auto;
+	grid-template-areas:
+	'headerTag 		headerTag'
+	'h1Tag 			h1Tag'
+	'h2Tag 			h2Tag'
+	'menuTag 		menuTag'
+	'ticketTag		ticketTag'
+	'tableTag 		tableTag' 		
+	'tableTag 		tableTag' 		
+	'tableTag 		tableTag'		
+	'tableTag 		tableTag' 		 
+	'copyrightTag 	copyrightTag' 
+	'asideTag		asideTag'
+	'footerTag 		cookieTag';
+
+
+}
+#tickets-header
+{
+	grid-area: headerTag;
+	background-color: #123;
+}
+#headlogo
+{
+	width: 100px;
+}
+#ticketsh1
+{
+	grid-area: h1Tag;
+}
+#ticketsh2
+{
+	grid-area: h2Tag;
+}
+#tickets-navMenu
+{
+	grid-area: menuTag;
+	background-color: yellow;
+}
+#ticketsInfo
+{
+	grid-area: ticketTag;
+	background-color: #88F;
+}
+#flightTable
+{
+	grid-area: tableTag;
+	background-color: #F65;
+}
+#copyright
+{
+	grid-area: copyrightTag;
+	background-color: aquamarine;
+}
+#tickets-3images
+{
+	grid-area: asideTag;
+	background-color: chartreuse;
+}
+#tickets-firstProduct
+{
+	grid-area: product1Tag;
+	width: 60%;
+	display: none;
+	
+}
+/* #tickets-secondProduct
+{
+	grid-area: product2Tag;
+	width: 40%;
+
+}
+#tickets-thirdProduct
+{
+	grid-area: product3Tag;
+	width: 40%;
+	
+} */
+.productPhoto
+{
+	width: 70%;
+}
+#ticketsProductAside
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#tickets-footer
+{
+	grid-area: footerTag;
+	background-color: blueviolet;
+	width: 1000%;
+}
+#CookieStatement
+{
+	grid-area: cookieTag;
+	background-color: #000;
+	color: #FFF;
+	opacity: 50%;
+	background-color: #FA0;
 }
 
 }
@@ -714,6 +944,116 @@ footer
 #CookieStatement
 {
 	grid-area: cookieTag;
+}
+
+/* tickets.html MOBILE */
+
+#tickets-grid-container
+{
+	width: 100%;
+	display: grid;
+	
+	grid-template-columns: auto auto;
+	grid-template-areas:
+	'h1Tag 			h1Tag'
+	'h2Tag 			h2Tag'
+	'menuTag 		menuTag'
+	'ticketTag		ticketTag'
+	'tableTag 		tableTag' 		
+	'tableTag 		tableTag' 		
+	'tableTag 		tableTag'		
+	'tableTag 		tableTag' 		 
+	'copyrightTag 	copyrightTag' 
+	'asideTag		asideTag'
+	'footerTag 		cookieTag';
+
+
+}
+#tickets-header
+{
+	grid-area: headerTag;
+	background-color: #123;
+}
+#headlogo
+{
+	width: 100px;
+	display: none;
+}
+#ticketsh1
+{
+	grid-area: h1Tag;
+}
+#ticketsh2
+{
+	grid-area: h2Tag;
+}
+#tickets-navMenu
+{
+	grid-area: menuTag;
+	background-color: yellow;
+}
+#ticketsInfo
+{
+	grid-area: ticketTag;
+	background-color: #88F;
+}
+#flightTable
+{
+	grid-area: tableTag;
+	background-color: #F65;
+}
+#copyright
+{
+	grid-area: copyrightTag;
+	background-color: aquamarine;
+}
+#tickets-3images
+{
+	grid-area: asideTag;
+	background-color: chartreuse;
+}
+#tickets-firstProduct
+{
+	grid-area: product1Tag;
+	width: 60%;
+	display: none;
+	
+}
+/* #tickets-secondProduct
+{
+	grid-area: product2Tag;
+	width: 40%;
+
+}
+#tickets-thirdProduct
+{
+	grid-area: product3Tag;
+	width: 40%;
+	
+} */
+.productPhoto
+{
+	width: 70%;
+}
+#ticketsProductAside
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#tickets-footer
+{
+	grid-area: footerTag;
+	background-color: blueviolet;
+	width: 1000%;
+}
+#CookieStatement
+{
+	grid-area: cookieTag;
+	background-color: #000;
+	color: #FFF;
+	opacity: 50%;
+	background-color: #FA0;
 }
 
 }
