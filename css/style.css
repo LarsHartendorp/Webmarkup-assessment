@@ -1,18 +1,42 @@
-tr:nth-child(even) {
-	background-color: #dddddd;
+tr:nth-child(even) 
+{
+    background-color: #dddddd;
 
 }
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+	width: 100%;
+	background: #050;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	text-align: center;
+  }
+  #hamitems a:hover { background: #807f7f; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+
 /* Responsive layout - pc */
 @media (min-width: 1180px) {
 /*index.html*/
 
 #headerParent 
 {
-	flex-basis: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	background-color: #A10;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #A10;
 }
 #headlogo
 {
@@ -20,75 +44,75 @@ width: 100px;
 }
 #menuNavigation
 {
-	display: flex;
-	flex-direction: column;
-	font-family: sans-serif;
-	font-size: 16px;
-	background: #FFF;
-	border: 1em;
-	border-style: double;
-	border-color: #000;
-	padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 16px;
+    background: #FFF;
+    border: 1em;
+    border-style: double;
+    border-color: #000;
+    padding: 0 15px;
 }
 #videoFormat
 {
-	background-color: #88F;
-	flex-basis: 100%;
-	flex-shrink: 0;  
-	flex-grow: 0;  
+    background-color: #88F;
+    flex-basis: 100%;
+    flex-shrink: 0;  
+    flex-grow: 0;  
 
 }
 .flexParent
 {
-	width: 100%;
-	flex-basis: 100%;
-	background-color: #F0F;
-	margin: 0;
-	flex-shrink: 0;  
-	flex-grow: 1; 
+    width: 100%;
+    flex-basis: 100%;
+    background-color: #F0F;
+    margin: 0;
+    flex-shrink: 0;  
+    flex-grow: 1; 
     
 }
 .imgFlex
 {
-	display: flex;
-	flex-wrap: wrap;
-	width: 20%;
-	float: right;
-	clear: both;
-	margin: 0;
-	
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    float: right;
+    clear: both;
+    margin: 0;
+    
 }
 #firstChild
 {
-	flex-basis: 70%;
-	flex-shrink: 0;
-	flex-grow: 0;
-	order: 1;
+    flex-basis: 70%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    order: 1;
 }
 #secondChild
 {
-	flex-basis: 100%;
-	flex-shrink: 0;
-	flex-grow: 1;
-	order: 2;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+    order: 2;
 }
 #thirdChild
 {
-	flex-basis: 100%;
-	flex-shrink: 0;
-	flex-grow: 1;
-	order: 3;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+    order: 3;
 }
 .articleText
 {
-	font-family: arial;
+    font-family: arial;
 }
 #upcomingSection
 {
-	background-color: red;
-	flex-basis: 100%;
-	flex-shrink: 0;
-	flex-grow: 1;
+    background-color: red;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
 }
 body 
 {
@@ -96,223 +120,297 @@ body
 }
 
 
-
 /*bestdestinations.html PC*/ 
 
 #bestdestinations-grid-container 
 {
-	width: 100%;
-	display: grid;
-	
-	grid-template-areas:
-	'headerTag headerTag headerTag'
-	'h1Tag h1Tag h1Tag'
-	'h2Tag h2Tag h2Tag'
-	'menuTag 	menuTag menuTag'
-	'article2Tag article1Tag article3Tag'
-	'article2Tag article1Tag article3Tag' 
-	'article5Tag article1Tag article3Tag'
-	'article5Tag article1Tag article4Tag'
-	'article5Tag article1Tag article4Tag'
-	'article5Tag article1Tag article4Tag' 
-	'article5Tag article6Tag article6Tag'
-	'asideTag asideTag asideTag' 
-	'product1Tag product2Tag product3Tag'
-	'footerTag footerTag cookieTag';
-	
+    width: 100%;
+    display: grid;
+    
+    grid-template-areas:
+    'headerTag 		headerTag 		headerTag'
+    'menuTag   		menuTag 		menuTag'
+    'article2Tag 	article1Tag 	article3Tag'
+    'article2Tag 	article1Tag 	article3Tag' 
+    'article5Tag 	article1Tag 	article3Tag'
+    'article5Tag 	article1Tag 	article4Tag'
+    'article5Tag 	article1Tag 	article4Tag'
+    'article5Tag 	article1Tag 	article4Tag' 
+    'article5Tag 	article6Tag 	article6Tag'
+    'asideTag 		asideTag 		asideTag' 
+    'product1Tag 	product2Tag 	product3Tag'
+    'footerTag 		footerTag 		cookieTag';
+    
 }
 
 #best-header
 {
-	grid-area: headerTag;
-	background-color: #123;
+    grid-area: headerTag;
+    background-color: #123;
 }
 #best-h1
 {
-	grid-area: h1Tag;
-	background-color: #123456;
+    grid-area: h1Tag;
+    background-color: #123456;
 }
 #best-h2
 {
-	grid-area: h2Tag;
-	background-color: #124365;
+    grid-area: h2Tag;
+    background-color: #124365;
 }
 #headlogo
 {
-	width: 100px;
+    width: 100px;
 }
-#best-menuNavigation
+#hamnav
 {
-	grid-area: menuTag;
-	background-color: yellow;
-	
+    grid-area: menuTag;
+    
 }
 #article1
 {
-	grid-area: article1Tag;
-	background-color: red;
+    grid-area: article1Tag;
+    background-color: red;
 }
 #article2
 {
-	grid-area: article2Tag;
-	background-color: blue;
+    grid-area: article2Tag;
+    background-color: blue;
 }
 #article3
 {
-	grid-area: article3Tag;
-	background-color: green;
+    grid-area: article3Tag;
+    background-color: green;
 }
 #article4
 {
-	grid-area: article4Tag;
-	background-color: brown;
+    grid-area: article4Tag;
+    background-color: brown;
 }
 #article5
 {
-	grid-area: article5Tag;
-	background-color: orange;
+    grid-area: article5Tag;
+    background-color: orange;
 }
 #article6
 {
-	grid-area: article6Tag;
-	background-color: purple;;
+    grid-area: article6Tag;
+    background-color: purple;;
 }
 #best-3images
 {
-	grid-area: asideTag;
+    grid-area: asideTag;
 }
 #best-firstProduct
 {
-	grid-area: product1Tag;
-	width: 33%
+    grid-area: product1Tag;
+    width: 33%
 }
 #best-secondProduct
 {
-	grid-area: product2Tag;
-	clear: both;
-	width: 33%
+    grid-area: product2Tag;
+    clear: both;
+    width: 33%
 }
 #best-thirdProduct
 {
-	grid-area: product3Tag;
-	width: 33%
+    grid-area: product3Tag;
+    width: 33%
 }
 #best-footer
 {
-	grid-area: footerTag;
+    grid-area: footerTag;
 }
 #CookieStatement
 {
-	grid-area: cookieTag;
+    grid-area: cookieTag;
 }
 
 /*tickets.html PC*/
 #tickets-grid-container
 {
-	width: 100%;
-	display: grid;
-	
-	grid-template-columns: auto auto 33%;
-	grid-template-areas:
-	'headerTag 		headerTag 		headerTag'
-	'h1Tag 			h1Tag 			h1Tag'
-	'h2Tag 			h2Tag 			h2Tag'
-	'menuTag 		menuTag 		menuTag'
-	'ticketTag		ticketTag 		ticketTag'
-	'tableTag 		tableTag 		asideTag'
-	'tableTag 		tableTag 		product1Tag'
-	'tableTag 		tableTag 		product2Tag'
-	'tableTag 		tableTag 		product3Tag' 
-	'copyrightTag 	copyrightTag 	copyrightTag'
-	'footerTag 		footerTag 		cookieTag' ;
-
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns: auto auto 33%;
+    grid-template-areas:
+    'headerTag      headerTag       headerTag'
+    'h1Tag          h1Tag           h1Tag'
+    'h2Tag          h2Tag           h2Tag'
+    'menuTag        menuTag         menuTag'
+    'ticketTag      ticketTag       ticketTag'
+    'tableTag       tableTag        asideTag'
+    'tableTag       tableTag        product1Tag'
+    'tableTag       tableTag        product2Tag'
+    'tableTag       tableTag        product3Tag' 
+    'copyrightTag   copyrightTag    copyrightTag'
+    'footerTag      footerTag       cookieTag' ;
 
 }
 #tickets-header
 {
-	grid-area: headerTag;
-	background-color: #123;
+    grid-area: headerTag;
+    background-color: #123;
 }
 #headlogo
 {
-	width: 100px;
+    width: 100px;
 }
 #ticketsh1
 {
-	grid-area: h1Tag;
+    grid-area: h1Tag;
 }
 #ticketsh2
 {
-	grid-area: h2Tag;
+    grid-area: h2Tag;
 }
-#tickets-navMenu
+#hamnav
 {
-	grid-area: menuTag;
-	background-color: yellow;
-	display: flex;
-	flex-direction: column;
+    grid-area: menuTag;
+    display: flex;
+    flex-direction: column;
 }
 #tickets-column
 {
-	background-color: yellow;
-	display: flex;
-	flex-direction: row;
-	text-decoration: none;
-	list-style-type: none;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 #ticketsInfo
 {
-	grid-area: ticketTag;
-	background-color: #88F;
+    grid-area: ticketTag;
+    background-color: #88F;
 }
 #flightTable
 {
-	grid-area: tableTag;
-	background-color: #F65;
+    grid-area: tableTag;
+    background-color: #F65;
 }
 #copyright
 {
-	grid-area: copyrightTag;
-	background-color: aquamarine;
+    grid-area: copyrightTag;
+    background-color: aquamarine;
 }
 #tickets-3images
 {
-	grid-area: asideTag;
-	background-color: chartreuse;
+    grid-area: asideTag;
+    background-color: chartreuse;
 }
 #tickets-firstProduct
 {
-	grid-area: product1Tag;
-	width: 60%;
-	
+    grid-area: product1Tag;
+    width: 60%;
+    
 }
 #tickets-secondProduct
 {
-	grid-area: product2Tag;
-	width: 60%;
+    grid-area: product2Tag;
+    width: 60%;
 
 }
 #tickets-thirdProduct
 {
-	grid-area: product3Tag;
-	width: 60%;
-	
+    grid-area: product3Tag;
+    width: 60%;
+    
 }
 #tickets-footer
 {
+    grid-area: footerTag;
+    background-color: blueviolet;
+}
+#CookieStatement
+{
+    grid-area: cookieTag;
+    background-color: #000;
+    color: #FFF;
+    opacity: 50%;
+    background-color: #FA0;
+}
+
+/*Contact.html*/
+#contact-grid-container
+{
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns: auto auto 33%;
+    grid-template-areas:
+    'headerTag      headerTag       headerTag'
+    'h1Tag          h1Tag           h1Tag'
+    'h2Tag          h2Tag           h2Tag'
+    'menuTag        menuTag         menuTag'
+	'fieldTag 		fieldTag		asideTag'
+	'fieldTag 		fieldTag		product1Tag'
+	'fieldTag 		fieldTag		product2Tag'
+	'fieldTag 		fieldTag		product3Tag'
+	'footerTag		footerTag		cookieTag';
+
+}
+#contact-header
+{
+    grid-area: headerTag;
+    background-color: #123;
+}
+#headlogo
+{
+    width: 100px;
+}
+#contacth1
+{
+    grid-area: h1Tag;
+}
+#contacth2
+{
+    grid-area: h2Tag;
+}
+#hamnav
+{
+    grid-area: menuTag;
+    display: flex;
+    flex-direction: column;
+}
+#contactFieldset
+{
+	grid-area: fieldTag;
+}
+#contact-3images
+{
+	grid-area: asideTag;
+}
+#contact-firstProduct
+{
+    grid-area: product1Tag;
+    width: 60%;
+    
+}
+#contact-secondProduct
+{
+    grid-area: product2Tag;
+    width: 60%;
+
+}
+#contact-thirdProduct
+{
+    grid-area: product3Tag;
+    width: 60%;
+    
+}
+#contact-footer
+{
 	grid-area: footerTag;
-	background-color: blueviolet;
 }
 #CookieStatement
 {
 	grid-area: cookieTag;
-	background-color: #000;
-	color: #FFF;
-	opacity: 50%;
-	background-color: #FA0;
+    background-color: #000;
+    color: #FFF;
+    opacity: 50%;
+    background-color: #FA0;
 }
-
 
 }
 /* Responsive layout - tablet */
@@ -321,146 +419,145 @@ body
 
 #header
 {
-	background-color: #A10;	
-	border-width: 5px;
-	border-style: dashed;
-	border-color: #FFF;
+    background-color: #A10; 
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #FFF;
 }
 #headlogo
 {
-	width: 100px;
-	height: 100px;
+    width: 100px;
+    height: 100px;
 }
 #best-h1
 {
-	grid-area: h1Tag;
+    grid-area: h1Tag;
 }
 #best-h2
 {
-	grid-area: h2Tag;
+    grid-area: h2Tag;
 }
-#menuNavigation
+#hamnav
 {
-	background-color: #F38;	
-	border-width: 5px;
-	border-style: solid;
-	border-color: #015;
-	display: flex;
-	flex-flow: row;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: #015;
+    display: flex;
+    flex-flow: row; */
 }
 li 
 {
-	float: left;
+    float: left;
 }
 
 a 
 {
-	display: block;
-	padding: 0px;
-	margin: 5px;
-	text-decoration: none;
+    display: block;
+    padding: 0px;
+    margin: 5px;
+    text-decoration: none;
 }
 ul
 {
-	list-style-type: none;
+    list-style-type: none;
 }
 .video
 {
-	width: 93%;
-	background-color: #A1CDF4;
-	border-width: 1em;
-	border-color: #F65; 
-	border-style: solid; 
-	position: relative;
-	top: 333px;
+    width: 93%;
+    background-color: #A1CDF4;
+    border-width: 1em;
+    border-color: #F65; 
+    border-style: solid; 
+    position: relative;
+    top: 333px;
 
 }
 .videoFormat
 {
-	width: 450px;
-	height: 300px;
+    width: 450px;
+    height: 300px;
 }
 .flexParent
 {
-	background-color: #EEF4D4;
-	display: flex;
-	flex-direction: column-reverse;
-	width: 93%;
-	border-width: 1em;
-	border-color: #123; 
-	border-style: double; 
-	position: relative;
-	top: 333px;	
+    background-color: #EEF4D4;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 93%;
+    border-width: 1em;
+    border-color: #123; 
+    border-style: double; 
+    position: relative;
+    top: 333px; 
 }
 #firstArticle
 {
-	background-color: #88F;
-	flex-wrap: wrap;
-	flex-basis: 30%;
-	flex-shrink: 1; 
-	flex-grow: 1;
+    background-color: #88F;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    flex-shrink: 1; 
+    flex-grow: 1;
 }
 .articleText
 {
-	text-align: right;
-	padding-right: 30px;
+    text-align: right;
+    padding-right: 30px;
 }
 .imgFlex 
 {
     width: 200px;
     float: left;
-	position: relative;
-	top: -30px;
-	left: 30px;	
+    position: relative;
+    top: -30px;
+    left: 30px; 
 }
 figcaption 
 {
     text-align: left;
-	padding-top: 100px;
-	position: relative;
-	left: -150px;
+    padding-top: 100px;
+    position: relative;
+    left: -150px;
 }
 #secondArticle
 {
-	background-color: #ffeff3;
-	flex-basis: 30%;
-	flex-shrink: 1; 
-	flex-grow: 1;
+    background-color: #ffeff3;
+    flex-basis: 30%;
+    flex-shrink: 1; 
+    flex-grow: 1;
 }
 #thirdArticle
 {
-	background-color: #b0e0e6;
-	flex-basis: 30%;
-	flex-shrink: 1; 
-	flex-grow: 1;
+    background-color: #b0e0e6;
+    flex-basis: 30%;
+    flex-shrink: 1; 
+    flex-grow: 1;
 }
 .upcomingSection
 {
-	background-color: #8bc34a;
-	border: solid;
-	border-color: #000;
-	position: absolute;
-	bottom: 30%;
-	right: 0;
-	height: 43%;
-	width: 100%;
+    background-color: #8bc34a;
+    border: solid;
+    border-color: #000;
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    height: 43%;
+    width: 100%;
 }
 .upcomingText
 {
-	text-align: left;
-	padding: 20px;
-	padding-right: 40px;
+    text-align: left;
+    padding: 20px;
+    padding-right: 40px;
 }
 #CookieStatement 
 {
-	background-color: #000;
-	position: fixed;
-	right: 0%;
-	bottom: 0;
-	width: 25%;
-	color: #FFF;
-	opacity: 50%;
-	background-color: #FA0;
+    background-color: #000;
+    position: fixed;
+    right: 0%;
+    bottom: 0;
+    width: 25%;
+    color: #FFF;
+    opacity: 50%;
+    background-color: #FA0;
 }
 body 
 {
@@ -468,364 +565,464 @@ body
 }
 footer
 {
-	position: relative;
-	padding-top: 333px;
+    position: relative;
+    padding-top: 333px;
 }
 /*bestdestinations.html Tablet*/
 
 #bestdestinations-grid-container
 {
-	width: 100%;
-	display: grid;
-	
-	grid-template-areas:
-	'headerTag headerTag'
-	'h1Tag h1Tag'
-	'h2Tag h2Tag'
-	'menuTag menuTag'
-	'article1Tag article2Tag'
-	'article1Tag article2Tag' 
-	'article3Tag article2Tag'
-	'article3Tag article5Tag'
-	'article3Tag article5Tag'
-	'article3Tag article5ag' 
-	'article6Tag article6Tag'
-	'article6Tag article6Tag'
-	'asideTag asideTag' 
-	'product1Tag product2Tag'
-	'footerTag cookieTag';
-	
+    width: 100%;
+    display: grid;
+    
+    grid-template-areas:
+    'headerTag headerTag'
+    'h1Tag h1Tag'
+    'h2Tag h2Tag'
+    'menuTag menuTag'
+    'article1Tag article2Tag'
+    'article1Tag article2Tag' 
+    'article3Tag article2Tag'
+    'article3Tag article5Tag'
+    'article3Tag article5Tag'
+    'article3Tag article5ag' 
+    'article6Tag article6Tag'
+    'article6Tag article6Tag'
+    'asideTag asideTag' 
+    'product1Tag product2Tag'
+    'footerTag cookieTag';
+    
 }
 
 #best-header
 {
-	grid-area: headerTag;
-	background-color: #123456;
+    grid-area: headerTag;
+    background-color: #123456;
 }
 #headlogo
 {
-	width: auto;
+    width: auto;
 }
 #best-h1
 {
-	grid-area: h1Tag;
-	background-color: #4c769f;
+    grid-area: h1Tag;
+    background-color: #4c769f;
 }
 #best-h2
 {
-	grid-area: h2Tag;
-	background-color: #124365;
+    grid-area: h2Tag;
+    background-color: #124365;
 }
-#best-menuNavigation
+#hamnav
 {
-	grid-area: menuTag;
-	background-color: pink;
-	
+    grid-area: menuTag;
+    
 }
 #article1
 {
-	grid-area: article1Tag;
-	background-color: red;
+    grid-area: article1Tag;
+    background-color: red;
 }
 #article2
 {
-	grid-area: article2Tag;
-	background-color: blue;
+    grid-area: article2Tag;
+    background-color: blue;
 }
 #article3
 {
-	grid-area: article3Tag;
-	background-color: green;
+    grid-area: article3Tag;
+    background-color: green;
 }
 #article4
 {
-	grid-area: article4Tag;
-	background-color: brown;
-	display: none;
+    grid-area: article4Tag;
+    background-color: brown;
+    display: none;
 }
 #article5
 {
-	grid-area: article5Tag;
-	background-color: orange;
+    grid-area: article5Tag;
+    background-color: orange;
 }
 #article6
 {
-	grid-area: article6Tag;
-	background-color: purple;;
+    grid-area: article6Tag;
+    background-color: purple;;
 }
 #best-3images
 {
-	grid-area: asideTag;
+    grid-area: asideTag;
 }
 #best-firstProduct
 {
-	grid-area: product1Tag;
-	width: 33%
+    grid-area: product1Tag;
+    width: 33%
 }
 #best-secondProduct
 {
-	grid-area: product2Tag;
-	clear: both;
-	width: 33%
+    grid-area: product2Tag;
+    clear: both;
+    width: 33%
 }
 #best-thirdProduct
 {
-	grid-area: product3Tag;
-	width: 33%
+    grid-area: product3Tag;
+    width: 33%
 }
 #best-footer
 {
-	grid-area: footerTag;
+    grid-area: footerTag;
 }
 #CookieStatement
 {
-	grid-area: cookieTag;
-	background-color: #000;
-	position: fixed;
-	right: 0%;
-	bottom: 0;
-	width: 25%;
-	color: #FFF;
-	opacity: 50%;
-	background-color: #FA0;
+    grid-area: cookieTag;
+    background-color: #000;
+    position: fixed;
+    right: 0%;
+    bottom: 0;
+    width: 25%;
+    color: #FFF;
+    opacity: 50%;
+    background-color: #FA0;
 }
 
 /*tickets.html Tablet*/
 #tickets-grid-container
 {
-	width: 100%;
-	display: grid;
-	
-	grid-template-columns: auto auto;
-	grid-template-areas:
-	'headerTag 		headerTag'
-	'h1Tag 			h1Tag'
-	'h2Tag 			h2Tag'
-	'menuTag 		menuTag'
-	'ticketTag		ticketTag'
-	'tableTag 		tableTag' 		
-	'tableTag 		tableTag' 		
-	'tableTag 		tableTag'		
-	'tableTag 		tableTag' 		 
-	'copyrightTag 	copyrightTag' 
-	'asideTag		asideTag'
-	'footerTag 		cookieTag';
-
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    'headerTag      headerTag'
+    'h1Tag          h1Tag'
+    'h2Tag          h2Tag'
+    'menuTag        menuTag'
+    'ticketTag      ticketTag'
+    'tableTag       tableTag'       
+    'tableTag       tableTag'       
+    'tableTag       tableTag'       
+    'tableTag       tableTag'        
+    'copyrightTag   copyrightTag' 
+    'asideTag       asideTag'
+    'footerTag      cookieTag';
 
 }
 #tickets-header
 {
-	grid-area: headerTag;
-	background-color: #123;
+    grid-area: headerTag;
+    background-color: #123;
 }
 #headlogo
 {
-	width: 100px;
+    width: 100px;
 }
 #ticketsh1
 {
-	grid-area: h1Tag;
+    grid-area: h1Tag;
 }
 #ticketsh2
 {
-	grid-area: h2Tag;
+    grid-area: h2Tag;
 }
-#tickets-navMenu
+#hamnav
 {
-	grid-area: menuTag;
-	background-color: yellow;
+    grid-area: menuTag;
 }
 #ticketsInfo
 {
-	grid-area: ticketTag;
-	background-color: #88F;
+    grid-area: ticketTag;
+    background-color: #88F;
 }
 #flightTable
 {
-	grid-area: tableTag;
-	background-color: #F65;
+    grid-area: tableTag;
+    background-color: #F65;
 }
 #copyright
 {
-	grid-area: copyrightTag;
-	background-color: aquamarine;
+    grid-area: copyrightTag;
+    background-color: aquamarine;
 }
 #tickets-3images
 {
-	grid-area: asideTag;
-	background-color: chartreuse;
+    grid-area: asideTag;
+    background-color: chartreuse;
 }
 #tickets-firstProduct
 {
-	grid-area: product1Tag;
-	width: 60%;
-	display: none;
-	
+    grid-area: product1Tag;
+    width: 60%;
+    display: none;
+    
 }
 /* #tickets-secondProduct
 {
-	grid-area: product2Tag;
-	width: 40%;
+    grid-area: product2Tag;
+    width: 40%;
 
 }
 #tickets-thirdProduct
 {
-	grid-area: product3Tag;
-	width: 40%;
-	
+    grid-area: product3Tag;
+    width: 40%;
+    
 } */
 .productPhoto
 {
-	width: 70%;
+    width: 70%;
 }
 #ticketsProductAside
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #tickets-footer
 {
+    grid-area: footerTag;
+    background-color: blueviolet;
+}
+#CookieStatement
+{
+    grid-area: cookieTag;
+    background-color: #000;
+    color: #FFF;
+    opacity: 50%;
+    background-color: #FA0;
+}
+
+
+/* Contact.html - Tablet */
+#contact-grid-container
+{
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns: 75%  25%;
+    grid-template-areas:
+    'headerTag      headerTag'
+    'h1Tag          h1Tag'
+    'h2Tag          h2Tag'
+    'menuTag        menuTag'
+	'fieldTag 		asideTag'
+	'fieldTag 		product1Tag'
+	'fieldTag 		product2Tag'
+	'fieldTag 		product3Tag'
+	'footerTag		cookieTag';
+
+}
+#contact-header
+{
+    grid-area: headerTag;
+    background-color: #123;
+}
+#headlogo
+{
+    width: 100px;
+}
+#contacth1
+{
+    grid-area: h1Tag;
+}
+#contacth2
+{
+    grid-area: h2Tag;
+}
+#hamnav
+{
+    grid-area: menuTag;
+    display: flex;
+    flex-direction: column;
+}
+#contactFieldset
+{
+	grid-area: fieldTag;
+}
+#contact-3images
+{
+	grid-area: asideTag;
+
+}
+#contact-firstProduct
+{
+    grid-area: product1Tag;
+  
+    
+}
+#contact-secondProduct
+{
+    grid-area: product2Tag;
+
+
+}
+#contact-thirdProduct
+{
+    grid-area: product3Tag;
+   ;
+    
+}
+#contact-footer
+{
 	grid-area: footerTag;
-	background-color: blueviolet;
-	width: 1000%;
 }
 #CookieStatement
 {
 	grid-area: cookieTag;
-	background-color: #000;
-	color: #FFF;
-	opacity: 50%;
-	background-color: #FA0;
+    background-color: #000;
+    color: #FFF;
+    opacity: 50%;
+    background-color: #FA0;
 }
 
 }
 
 /* Responsive layout - mobile */  /* eventueel max-device-width*/ 
 @media (max-device-width: 480px)  {
+		#hamitems a {
+	  box-sizing: border-box;
+	  display: block;
+	  width: 100%;
+	  border-top: 1px solid rgb(241, 0, 0);
+	}
+   
+	/* (B) SHOW HAMBURGER ICON */
+	#hamnav label { 
+	  display: inline-block; 
+	  color: rgb(14, 3, 3);
+	  background: #ff0d00;
+	  font-style: normal;
+	  font-size: 1.2em;
+	  padding: 10px;
+	}
+  
+	/* (C) TOGGLE SHOW/HIDE MENU */
+	#hamitems { display: none; }
+	#hamnav input:checked ~ #hamitems { display: block; }
+ 
 /*index.html*/ 
 
 #header
 {
-	background-color: #A10;	
-	border-width: 5px;
-	border-style: dashed;
-	border-color: #FFF;
+    background-color: #A10; 
+    border-width: 5px;
+    border-style: dashed;
+    border-color: #FFF;
 }
 #headlogo
 {
-	width: 100px;
-	height: 100px;
+    width: 100px;
+    height: 100px;
 }
-#menuNavigation
+#hamnav
 {
-	background-color: #F38;	
-	border-width: 5px;
-	border-style: solid;
-	border-color: #015;
-	display: flex;
-	flex-flow: column;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: #015;
+    display: flex;
+    flex-flow: column;
 }
 .upcomingSection
 {
-	background-color: #8bc34a;
-	border: solid;
-	border-color: #000;
-	position: absolute;
-	top: 200px;
-	height: 16%
+    background-color: #8bc34a;
+    border: solid;
+    border-color: #000;
+    position: absolute;
+    top: 200px;
+    height: 16%
 
 }
 .upcomingText
 {
-	text-align: left;
-	padding: 20px;
-	padding-right: 40px;
+    text-align: left;
+    padding: 20px;
+    padding-right: 40px;
 }
 .video
 {
-	display: none;
-	width: 93%;
-	background-color: #A1CDF4;
-	border-width: 1em;
-	border-color: #F65; 
-	border-style: solid; 
-	position: relative;
-	top: 333px;
+    display: none;
+    width: 93%;
+    background-color: #A1CDF4;
+    border-width: 1em;
+    border-color: #F65; 
+    border-style: solid; 
+    position: relative;
+    top: 333px;
 
 }
 .videoFormat
 {
-	display: none;
-	width: 450px;
-	height: 300px;
+    display: none;
+    width: 450px;
+    height: 300px;
 }
 .flexParent
 {
-	background-color: #EEF4D4;
-	display: flex;
-	flex-direction: column-reverse;
-	width: 97%;
-	border-width: 1em;
-	border-color: #123; 
-	border-style: double; 
-	position: relative;
-	
-	
+    background-color: #EEF4D4;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 97%;
+    border-width: 1em;
+    border-color: #123; 
+    border-style: double; 
+    position: relative;
+    
+    
 }
 #firstArticle
 {
-	background-color: #88F;
-	flex-wrap: wrap;
-	flex-basis: 30%;
-	flex-shrink: 1; 
-	flex-grow: 1;
+    background-color: #88F;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    flex-shrink: 1; 
+    flex-grow: 1;
 }
 .articleText
 {
-	text-align: right;
-	padding-right: 30px;
+    text-align: right;
+    padding-right: 30px;
 }
 .imgFlex 
 {
     width: 200px;
     float: left;
-	position: relative;
-	top: -30px;
-	left: 30px;
+    position: relative;
+    top: -30px;
+    left: 30px;
 }
 figcaption 
 {
     text-align: left;
-	padding-top: 100px;
-	position: relative;
-	left: -150px;
+    padding-top: 100px;
+    position: relative;
+    left: -150px;
 }
 #secondArticle
 {
-	background-color: #ffeff3;
-	flex-basis: 30%;
-	flex-shrink: 1; 
-	flex-grow: 1;
+    background-color: #ffeff3;
+    flex-basis: 30%;
+    flex-shrink: 1; 
+    flex-grow: 1;
 }
 #thirdArticle
 {
-	background-color: #b0e0e6;
-	flex-basis: 30%;
-	flex-shrink: 1; 
-	flex-grow: 1;
+    background-color: #b0e0e6;
+    flex-basis: 30%;
+    flex-shrink: 1; 
+    flex-grow: 1;
 }
 
 #CookieStatement 
 {
-	background-color: #000;
-	position: fixed;
-	right: 0%;
-	bottom: 0;
-	width: 25%;
-	color: #FFF;
-	opacity: 50%;
-	background-color: #FA0;
+    background-color: #000;
+    position: fixed;
+    right: 0%;
+    bottom: 0;
+    width: 25%;
+    color: #FFF;
+    opacity: 50%;
+    background-color: #FA0;
 }
 body 
 {
@@ -833,227 +1030,319 @@ body
 }
 footer
 {
-	position: relative;
-	padding-top: 333px;
+    position: relative;
+    padding-top: 333px;
 }
 /* bestdestinations.html MOBILE */
 #bestdestinations-grid-container
 {
-	width: 100%;
-	display: grid;
-	grid-template-columns: 65% auto;
-	
-	grid-template-areas:
-	'h1Tag menuTag'
-	'h2Tag menuTag'
-	'article5Tag article5Tag'
-	'article5Tag article5Tag' 
-	'article5Tag article5Tag'
-	'article3Tag article3Tag'
-	'article3Tag article3Tag'
-	'article3Tag article3Tag' 
-	'article2Tag article2Tag'
-	'article2Tag article2Tag'
-	'article2Tag article2Tag'
-	'article1Tag article1Tag'
-	'article1Tag article1Tag'
-	'article1Tag article1Tag'
-	'asideTag asideTag' 
-	'product1Tag product1Tag'
-	'product2Tag product2Tag'
-	'product3Tag product3Tag'
-	'footerTag cookieTag';
-	
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% auto;
+    
+    grid-template-areas:
+    'headerTag 			menuTag'
+	'headerTag			menuTag'
+    'article5Tag 		article5Tag'
+    'article5Tag 		article5Tag' 
+    'article5Tag 		article5Tag'
+    'article3Tag 		article3Tag'
+    'article3Tag 		article3Tag'
+    'article3Tag 		article3Tag' 
+    'article2Tag 		article2Tag'
+    'article2Tag 		article2Tag'
+    'article2Tag 		article2Tag'
+    'article1Tag 		article1Tag'
+    'article1Tag 		article1Tag'
+    'article1Tag 		article1Tag'
+    'asideTag 			asideTag' 
+    'product1Tag 		product1Tag'
+    'product2Tag 		product2Tag'
+    'product3Tag 		product3Tag'
+    'footerTag 			cookieTag';
+    
 }
 #best-h1
 {
-	grid-area: h1Tag;
-	background-color: #88F;
+    grid-area: h1Tag;
+    background-color: #88F;
 }
 #best-h2
 {
-	grid-area: h2Tag;
-	background-color: #8bc34a;
+    grid-area: h2Tag;
+    background-color: #8bc34a;
 }
 #best-header
 {
-	display: none;
+    /* display: none; */
+    grid-area: headerTag;
 }
-#best-menuNavigation
+#headlogo
 {
-	grid-area: menuTag;
-	background-color: pink;
-	
+    display: none;
+}
+#hamnav
+{
+    grid-area: menuTag;
+    
 }
 #article1
 {
-	grid-area: article1Tag;
-	background-color: red;
+    grid-area: article1Tag;
+    background-color: red;
 }
 #article2
 {
-	grid-area: article2Tag;
-	background-color: blue;
+    grid-area: article2Tag;
+    background-color: blue;
 }
 #article3
 {
-	grid-area: article3Tag;
-	background-color: green;
+    grid-area: article3Tag;
+    background-color: green;
 }
 #article4
 {
-	grid-area: article4Tag;
-	background-color: brown;
-	display: none;
+    grid-area: article4Tag;
+    background-color: brown;
+    display: none;
 }
 #article5
 {
-	grid-area: article5Tag;
-	background-color: orange;
+    grid-area: article5Tag;
+    background-color: orange;
 }
 #article6
 {
-	grid-area: article6Tag;
-	background-color: purple;
-	display: none;
+    grid-area: article6Tag;
+    background-color: purple;
+    display: none;
 }
 #best-3images
 {
-	grid-area: asideTag;
+    grid-area: asideTag;
 }
 #best-firstProduct
 {
-	grid-area: product1Tag;
-	width: 33%
+    grid-area: product1Tag;
+    width: 33%
 }
 #best-secondProduct
 {
-	grid-area: product2Tag;
-	clear: both;
-	width: 33%
+    grid-area: product2Tag;
+    clear: both;
+    width: 33%
 }
 #best-thirdProduct
 {
-	grid-area: product3Tag;
-	width: 33%
+    grid-area: product3Tag;
+    width: 33%
 }
 #best-footer
 {
-	grid-area: footerTag;
+    grid-area: footerTag;
 }
 #CookieStatement
 {
-	grid-area: cookieTag;
+    grid-area: cookieTag;
 }
 
 /* tickets.html MOBILE */
 
 #tickets-grid-container
 {
-	width: 100%;
-	display: grid;
-	
-	grid-template-columns: auto auto;
-	grid-template-areas:
-	'h1Tag 			h1Tag'
-	'h2Tag 			h2Tag'
-	'menuTag 		menuTag'
-	'ticketTag		ticketTag'
-	'tableTag 		tableTag' 		
-	'tableTag 		tableTag' 		
-	'tableTag 		tableTag'		
-	'tableTag 		tableTag' 		 
-	'copyrightTag 	copyrightTag' 
-	'asideTag		asideTag'
-	'footerTag 		cookieTag';
-
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    'headerTag 		menuTag'
+    'ticketTag      ticketTag'
+    'tableTag       tableTag'       
+    'tableTag       tableTag'       
+    'tableTag       tableTag'       
+    'tableTag       tableTag'        
+    'copyrightTag   copyrightTag' 
+    'asideTag       asideTag'
+    'footerTag      cookieTag';
 
 }
 #tickets-header
 {
-	grid-area: headerTag;
-	background-color: #123;
+    grid-area: headerTag;
+    background-color: coral;
 }
 #headlogo
 {
-	width: 100px;
-	display: none;
+    width: 100px;
+    display: none;
 }
 #ticketsh1
 {
-	grid-area: h1Tag;
+    grid-area: h1Tag;
 }
 #ticketsh2
 {
-	grid-area: h2Tag;
+    grid-area: h2Tag;
 }
-#tickets-navMenu
+#hamnav
 {
-	grid-area: menuTag;
-	background-color: yellow;
+    grid-area: menuTag;
+
 }
 #ticketsInfo
 {
-	grid-area: ticketTag;
-	background-color: #88F;
+    grid-area: ticketTag;
+    background-color: #88F;
 }
 #flightTable
 {
-	grid-area: tableTag;
-	background-color: #F65;
+    grid-area: tableTag;
+    background-color: #F65;
 }
 #copyright
 {
-	grid-area: copyrightTag;
-	background-color: aquamarine;
+    grid-area: copyrightTag;
+    background-color: aquamarine;
 }
 #tickets-3images
 {
-	grid-area: asideTag;
-	background-color: chartreuse;
+    grid-area: asideTag;
+    background-color: chartreuse;
 }
 #tickets-firstProduct
 {
-	grid-area: product1Tag;
-	width: 60%;
-	display: none;
-	
+    grid-area: product1Tag;
+    width: 60%;
+    display: none;
+    
 }
 /* #tickets-secondProduct
 {
-	grid-area: product2Tag;
-	width: 40%;
+    grid-area: product2Tag;
+    width: 40%;
 
 }
 #tickets-thirdProduct
 {
-	grid-area: product3Tag;
-	width: 40%;
-	
+    grid-area: product3Tag;
+    width: 40%;
+    
 } */
 .productPhoto
 {
-	width: 70%;
+    width: 70%;
 }
 #ticketsProductAside
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 #tickets-footer
 {
+    grid-area: footerTag;
+    background-color: blueviolet;
+  
+}
+#CookieStatement
+{
+    grid-area: cookieTag;
+    background-color: #000;
+    color: #FFF;
+    opacity: 50%;
+    background-color: #FA0;
+}
+
+
+/* Contact.html - Mobile */
+#contact-grid-container
+{
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns: 70%  30%;
+    grid-template-areas:
+    'headerTag      menuTag'
+    'h1Tag          h1Tag'
+    'h2Tag          h2Tag'
+	'fieldTag		fieldTag'
+	'fieldTag		fieldTag'
+	'fieldTag		fieldTag'
+	'fieldTag		fieldTag'
+	'fieldTag		fieldTag'
+	'asideTag		asideTag'
+	'product1Tag	product1Tag'
+	'product2Tag	product2Tag'
+	'product3Tag	product3Tag'
+	'footerTag		cookieTag';
+
+}
+#contact-header
+{
+    grid-area: headerTag;
+    background-color: #123;
+}
+#headlogo
+{
+    width: 100px;
+}
+#contacth1
+{
+    grid-area: h1Tag;
+}
+#contacth2
+{
+    grid-area: h2Tag;
+}
+#hamnav
+{
+    grid-area: menuTag;
+    display: flex;
+    flex-direction: column;
+}
+#contactFieldset
+{
+	grid-area: fieldTag;
+}
+#contact-3images
+{
+	grid-area: asideTag;
+
+}
+#contact-firstProduct
+{
+    grid-area: product1Tag;
+	width: 60%;
+  
+    
+}
+#contact-secondProduct
+{
+    grid-area: product2Tag;
+	width: 60%;
+
+
+}
+#contact-thirdProduct
+{
+    grid-area: product3Tag;
+   width: 60%;
+    
+}
+#contact-footer
+{
 	grid-area: footerTag;
-	background-color: blueviolet;
-	width: 1000%;
 }
 #CookieStatement
 {
 	grid-area: cookieTag;
-	background-color: #000;
-	color: #FFF;
-	opacity: 50%;
-	background-color: #FA0;
+    background-color: #000;
+    color: #FFF;
+    opacity: 50%;
+    background-color: #FA0;
 }
 
 }
+
+

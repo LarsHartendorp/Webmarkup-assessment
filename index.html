@@ -20,13 +20,20 @@
 	</header>
 </section>
 
-		<nav id="menuNavigation"> <!-- maybe better name? -->
-			<ul class= "menu">
-				<li class ="item"><a href="bestdestinations.html"> Best destinations&nbsp;</a></li> <!--link to 2nd page-->
-				<li class="item"><a href="tickets.html">&nbsp;Tickets&nbsp;</a></li> <!--link to 3rd page-->
-				<li class="item"><a href="contact.html">&nbsp;Contact&nbsp;</a></li> <!--link to 4th page-->
-			</ul>
-		</nav>
+  <!-- (A) MENU WRAPPER -->
+<nav id="hamnav">
+	<!-- (B) THE HAMBURGER -->
+	<label for="hamburger">&#9776;</label>
+	<input type="checkbox" id="hamburger"/>
+   
+	<!-- (C) MENU ITEMS -->
+	<section id="hamitems">
+		<a href="bestdestinations.html">&nbsp;Best destinations&nbsp;</a>
+		<a href="tickets.html">&nbsp;Tickets&nbsp;</a>
+		<a href="contact.html">&nbsp;Contact&nbsp;</a>
+	</section>
+  </nav>
+		
 <section class="video" id="videoFormat"> <!-- make a section? for video -->
 	<video class="videoFormat" autoplay muted loop> <!--no controls and autoplay--> <!--AANPASSEN! height width in css-->
 		<source src="video/Hyperlapse.mp4" type="video/mp4">

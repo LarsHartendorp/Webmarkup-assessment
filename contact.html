@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge">		
+	<link 
+		rel = "stylesheet"
+		type = "text/css"
+		href = "css/style.css"
+	/>
+		<title>TravelEverywhere.nl</title>
+	</head>
+<body>
+<section id = "contact-grid-container">
+	<header id = "contact-header">
+		<img src = "img/headlogo.png" alt=logowebsite id="headlogo"> <!--make id for all logo/img???-->
+		<h1 id = "contacth1">TravelEverywhere</h1>
+		<h2 id = "contacth2">Discover the world!</h2>
+	</header>
+
+	
+  <!-- (A) MENU WRAPPER -->
+  <nav id="hamnav">
+	<!-- (B) THE HAMBURGER -->
+	<label for="hamburger">&#9776;</label>
+	<input type="checkbox" id="hamburger"/>
+   
+	<!-- (C) MENU ITEMS -->
+	<section id="hamitems">
+        <a href="index.html">&nbsp;Home&nbsp;</a>
+		<a href="bestdestinations.html">&nbsp;Best destinations&nbsp;</a>
+		<a href="tickets.html">&nbsp;Tickets&nbsp;</a>
+	</section>
+  </nav>
+
+<form id="contactFieldset">
+<fieldset id="contactFieldset">
+	<legend id="contactFieldset">Contact</legend>
+		<h2>
+		What subject would you like to contact us about?
+		</h2>
+			<ul>
+				<li>
+					<label for="Contact"> 
+					Please choose a topic 
+					</label>
+				</li>
+							<li>
+				<select name="Make a choice">
+                    <option>Homepage</option>
+                    <option>Best destinations</option>
+					<option>Tickets - Ordering and delivery</option>
+					<option>Tickets - Cancel and return</option>
+					<option>Tickets - Gift voucher</option>
+					<option>Other question</option>
+				</select>
+				</li>
+			</ul>
+					
+				<li>		
+<label for="firstlastname">First and last name*</label>
+	<input type="text" id="firstlastnamename" name="name" placeholder="Willy Wonka">
+				</li>
+
+				<li>
+<label for="phonenumber">Phone number</label>
+	<input type="tel" id="phonenumber" name="phone" placeholder="06-12345678"> 
+				</li>
+
+                <li>
+                    <label for="note">Note**</label>
+                        <input type="text" id="notes" name="note">
+                </li>
+
+				<li>
+<label for="email"> E-mail address</label>
+	<input type="email" id="email" name="email" placeholder="youremail@email.com">
+		<button>Send email</button>
+				</li>
+
+            <p> Fields with a '*' are required </p>
+            <p> ** Notes can be up to 5000 characters</p>
+	
+</fieldset>
+</form>
+
+<aside id="contact-3images">
+	<h4>3 products</h4>		
+	<section id="contactProductAside">
+	<a href="https://www.vliegtickets.nl/noord-amerika/verenigde-staten/jackson-mississippi/">
+		<img src="img/jackson.jpg" id="contact-firstProduct" class="productPhoto"/>
+	</a>
+	<a href="https://www.tripadvisor.nl/Flights-g298198-Nara_Nara_Prefecture_Kinki-Cheap_Discount_Airfares.html">
+		<img src="img/nara.jpg" id="contact-secondProduct" class="productPhoto"/>
+	</a>
+	<a href="https://www.vliegtickets.nl/azie/filipijnen/iloilo/">
+		<img src="img/Iloilo.jpg" id="contact-thirdProduct" class="productPhoto"/>
+	</a>
+	</section>
+</aside>
+
+<footer id="contact-footer">
+	&copy; Lars Hartendorp
+</footer>
+		<section id="CookieStatement">
+			Cookie statement
+		</section>
+
+
+</section>
+
+</body>
+</html>
