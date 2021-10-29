@@ -53,16 +53,25 @@ body {
 @media (min-width: 1180px) {
 	/*index.html*/
 
+	#All-flexParent {
+		display: flex;
+		flex-direction: column;
+	}
+
 	#indexHome {
+		display: flex;
 		flex-basis: 100%;
 		flex-grow: 1;
 		flex-shrink: 1;
-		order: 3;
+		order: 2;
 	}
 
 	#indexHeader {
 		background-color: #4c769f;
-		order: 2;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
 	}
 
 	#headlogo {
@@ -71,67 +80,95 @@ body {
 		flex-grow: 1;
 		flex-shrink: 1;
 		order: 1;
-
 	}
 
 	#indexh1 {
 		background-color: #123456;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
 	}
 
 	#indexh2 {
 		background-color: #807f7f;
-	}
-
-	#hamnav {
 		flex-basis: 100%;
 		flex-grow: 1;
 		flex-shrink: 1;
-		order: 4;
+		order: 1;
+	}
+
+	#hamnav {
+		display: flex;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 3;
 
 	}
 
 	#indexVideo {
+		display: flex;
 		background-color: #88F;
 		flex-basis: 100%;
 		flex-grow: 1;
 		flex-shrink: 1;
-		order: 5;
+		order: 4;
 	}
 
 	.videoFormat {
 		width: 480px;
 		height: 360px;
 		margin-left: 100px;
+		order: 4;
 
 	}
 
 	.flexParent {
+		display: flex;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-direction: column;
 		background-color: #ec5d5d;
-		flex-basis: 65%;
+		flex-basis: 100%;
 	}
 
 	.articleText {
-		background-color: #c7c7c7;
+		background-color: transparent;
 	}
 
 	#firstChild {
-		background-color: #FA0;
+		display: flex;
 		flex-basis: 65%;
 		flex-grow: 1;
 		flex-shrink: 1;
-		order: 7;
+		background-color: #FA0;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 5;
 	}
 
 	#secondChild {
-		background-color: rgb(167, 113, 7);
+		display: flex;
 		flex-basis: 65%;
-		order: 8;
+		flex-grow: 1;
+		flex-shrink: 1;
+		background-color: rgb(167, 113, 7);
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 6;
 	}
 
 	#thirdChild {
+		display: flex;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
 		background-color: rgb(85, 58, 3);
-		flex-basis: 65%;
-		order: 9;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 7;
 	}
 
 	.imgFlex {
@@ -139,18 +176,21 @@ body {
 		float: right;
 		clear: both;
 		position: relative;
-		top: -120px;
+
 	}
 
 	#upcomingSection {
+		display: flex;
 		background-color: #ff0000;
-		padding: 50px;
-		flex-basis: 35%;
 		flex-grow: 0;
 		flex-shrink: 0;
-		flex-wrap: wrap;
-		order: 6;
+		order: 4;
 		height: 400px;
+	}
+
+	footer {
+		display: flex;
+		order: 8;
 	}
 
 
