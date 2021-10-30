@@ -34,6 +34,10 @@ body {
 	background-color: #8bc34a
 }
 
+ul+li {
+	background-color: hotpink;
+}
+
 ul>li {
 
 	color: gold;
@@ -175,50 +179,47 @@ h4 {
 
 	.flexParent {
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		flex-grow: 1;
 		flex-shrink: 1;
-		flex-direction: column;
-		background-color: #ffffff;
+		background-color: #f000ff;
 	}
 
 	.articleText {
+		width: 50%;
 		background-color: transparent;
 	}
 
 	#firstChild {
 		display: flex;
-		flex-basis: 60%;
-		letter-spacing: 0.5em;
-		flex-grow: 1;
-		flex-shrink: 1;
+		flex-basis: 70%;
+		letter-spacing: 0.1em;
+		flex-grow: 0;
+		/* flex-shrink: 1; */
 		background-color: #74ee15;
-		flex-grow: 1;
-		flex-shrink: 1;
 		order: 5;
 	}
 
 	#secondChild {
 		display: flex;
-		flex-basis: 60%;
-		flex-grow: 1;
-		flex-shrink: 1;
+		flex-basis: 70%;
+		flex-grow: 0;
+		/* flex-shrink: 1; */
 		line-height: 200%;
 		background-color: #ffe700;
-		flex-grow: 1;
-		flex-shrink: 1;
-		order: 6;
+
+		order: 7;
 	}
 
 	#thirdChild {
 		display: flex;
-		flex-basis: 100%;
-		flex-grow: 1;
-		flex-shrink: 1;
+		flex-basis: 70%;
+		flex-grow: 0;
+		/* flex-shrink: 1; */
 		text-indent: 50px;
 		background-color: #FFC72B;
-		flex-grow: 1;
-		flex-shrink: 1;
-		order: 7;
+		order: 8;
 	}
 
 	.imgFlex {
@@ -231,18 +232,20 @@ h4 {
 
 	#upcomingSection {
 		display: flex;
-		flex-basis: 100%;
+		flex-basis: 20%;
 		background-color: #f000ff;
-		flex-grow: 1;
-		flex-shrink: 1;
+		flex-grow: 0;
+		flex-shrink: 0;
 		word-spacing: 15px;
-		order: 5;
-		height: 400px;
+		order: 6;
+		height: -400px;
 	}
 
 	footer {
 		display: flex;
-		order: 8;
+		flex-basis: 100%;
+		flex-grow: 1;
+		order: 9;
 	}
 
 
@@ -627,12 +630,20 @@ h4 {
 		background-color: #001eff;
 	}
 
-	.articleText {
+	.articleText,
+	#firstLetter {
+		width: 50%;
 		background-color: transparent;
+		float: right;
+	}
+
+	#indexArticle {
+		float: right;
 	}
 
 	#firstChild {
 		display: flex;
+		float: right;
 		flex-basis: 60%;
 		letter-spacing: 0.5em;
 		flex-grow: 1;
@@ -645,6 +656,7 @@ h4 {
 
 	#secondChild {
 		display: flex;
+		float: right;
 		flex-basis: 60%;
 		flex-grow: 1;
 		flex-shrink: 1;
@@ -657,6 +669,7 @@ h4 {
 
 	#thirdChild {
 		display: flex;
+		float: right;
 		flex-basis: 100%;
 		flex-grow: 1;
 		flex-shrink: 1;
@@ -669,9 +682,11 @@ h4 {
 
 	.imgFlex {
 		width: 200px;
-		float: right;
+		float: left;
 		clear: both;
 		position: relative;
+		top: -60px;
+		left: -25px;
 
 	}
 
@@ -1031,7 +1046,7 @@ h4 {
 		flex-basis: 100%;
 		flex-grow: 1;
 		flex-shrink: 1;
-		order: 2;
+		order: 1;
 	}
 
 	#indexHeader {
@@ -1072,7 +1087,7 @@ h4 {
 		flex-basis: 0%;
 		flex-grow: 0;
 		flex-shrink: 0;
-		order: 1;
+		order: 2;
 
 	}
 
@@ -1103,6 +1118,8 @@ h4 {
 	}
 
 	.articleText {
+		width: 100%;
+		font-size: 13px;
 		background-color: transparent;
 	}
 
@@ -1143,11 +1160,18 @@ h4 {
 	}
 
 	.imgFlex {
-		width: 200px;
+		width: 250px;
 		float: right;
 		clear: both;
 		position: relative;
+		margin: 50px;
+		left: -250px;
+		top: 20px;
 
+	}
+
+	.footerText {
+		display: none;
 	}
 
 	#upcomingSection {
