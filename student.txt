@@ -1,4 +1,4 @@
 o	Student name: Lars Hartendorp
 o	Student number: 690720 
 o	Student class: INF1C
-o	URL student GitHub repository: https://github.com/LarsHartendorp
+o	URL student GitHub repository: https://github.com/LarsHartendorp/Webmarkup-assessment
