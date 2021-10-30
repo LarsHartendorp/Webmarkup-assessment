@@ -19,14 +19,20 @@ th:first-child {
 	background-color: #FF0;
 }
 
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #8bc34a
+}
+
 ul>li {
 
 	color: gold;
 }
 
-h3+h4 {
+h4 {
 	font-family: 'Notable';
-	color: rgb(79, 9, 170);
+	letter-spacing: 0.4em;
+	color: rgb(255, 255, 255);
 }
 
 #firstLetter::first-letter {
@@ -54,19 +60,20 @@ h3+h4 {
 	text-align: center;
 }
 
+/* mouse over link */
 #hamitems a:hover {
 	background: #807f7f;
+}
+
+/* selected link */
+#hamitems a:active {
+	color: #0000FF;
 }
 
 /* (C) HIDE HAMBURGER */
 #hamnav label,
 #hamburger {
 	display: none;
-}
-
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: #8bc34a
 }
 
 .CookieStatement {
@@ -140,7 +147,7 @@ body {
 
 	#indexVideo {
 		display: flex;
-		background-color: #88F;
+		background-color: #4deeea;
 		flex-basis: 100%;
 		flex-grow: 1;
 		flex-shrink: 1;
@@ -160,7 +167,7 @@ body {
 		flex-grow: 1;
 		flex-shrink: 1;
 		flex-direction: column;
-		background-color: #ec5d5d;
+		background-color: #ffffff;
 	}
 
 	.articleText {
@@ -173,7 +180,7 @@ body {
 		letter-spacing: 0.5em;
 		flex-grow: 1;
 		flex-shrink: 1;
-		background-color: #FA0;
+		background-color: #74ee15;
 		flex-grow: 1;
 		flex-shrink: 1;
 		order: 5;
@@ -185,7 +192,7 @@ body {
 		flex-grow: 1;
 		flex-shrink: 1;
 		line-height: 200%;
-		background-color: rgb(167, 113, 7);
+		background-color: #ffe700;
 		flex-grow: 1;
 		flex-shrink: 1;
 		order: 6;
@@ -197,7 +204,7 @@ body {
 		flex-grow: 1;
 		flex-shrink: 1;
 		text-indent: 50px;
-		background-color: rgb(85, 58, 3);
+		background-color: #FFC72B;
 		flex-grow: 1;
 		flex-shrink: 1;
 		order: 7;
@@ -214,7 +221,7 @@ body {
 	#upcomingSection {
 		display: flex;
 		flex-basis: 100%;
-		background-color: #FFC72B;
+		background-color: #f000ff;
 		flex-grow: 1;
 		flex-shrink: 1;
 		word-spacing: 15px;
@@ -492,6 +499,9 @@ body {
 
 	#contact-3images {
 		grid-area: asideTag;
+		border-width: thick;
+		border-style: double;
+		border-color: rgb(234, 255, 0);
 		background-color: red;
 	}
 
@@ -525,7 +535,151 @@ body {
 
 /* Responsive layout - tablet */
 @media (min-width: 481px) and (max-width: 1179px) {
-	/*index.html*/
+	/*index.html Tablet*/
+
+	#All-flexParent {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#indexHome {
+		display: flex;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 2;
+	}
+
+	#indexHeader {
+		background-color: #4c769f;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
+	}
+
+	#headlogo {
+		width: 100px;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
+	}
+
+	#indexh1 {
+		background-color: #123456;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
+	}
+
+	#indexh2 {
+		background-color: #807f7f;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
+	}
+
+	#hamnav {
+		display: flex;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 3;
+
+	}
+
+	#indexVideo {
+		display: flex;
+		background-color: #4deeea;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 5;
+	}
+
+	.videoFormat {
+		width: 480px;
+		height: 360px;
+		margin-left: 100px;
+		order: 5;
+
+	}
+
+	.flexParent {
+		display: flex;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-direction: column;
+		background-color: #001eff;
+	}
+
+	.articleText {
+		background-color: transparent;
+	}
+
+	#firstChild {
+		display: flex;
+		flex-basis: 60%;
+		letter-spacing: 0.5em;
+		flex-grow: 1;
+		flex-shrink: 1;
+		background-color: #74ee15;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 7;
+	}
+
+	#secondChild {
+		display: flex;
+		flex-basis: 60%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		line-height: 200%;
+		background-color: #ffe700;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 6;
+	}
+
+	#thirdChild {
+		display: flex;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		text-indent: 50px;
+		background-color: #FFC72B;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 5;
+	}
+
+	.imgFlex {
+		width: 200px;
+		float: right;
+		clear: both;
+		position: relative;
+
+	}
+
+	#upcomingSection {
+		display: flex;
+		flex-basis: 100%;
+		background-color: #f000ff;
+		flex-grow: 1;
+		flex-shrink: 1;
+		word-spacing: 15px;
+		order: 4;
+		height: 400px;
+	}
+
+	footer {
+		display: flex;
+		order: 8;
+	}
+
 
 
 	/*bestdestinations.html Tablet*/
@@ -856,6 +1010,151 @@ body {
 
 	/*index.html Mobile*/
 
+	#All-flexParent {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#indexHome {
+		display: flex;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 2;
+	}
+
+	#indexHeader {
+		background-color: #4c769f;
+		flex-basis: 70%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
+	}
+
+	#headlogo {
+		display: none;
+		width: 100px;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
+	}
+
+	#indexh1 {
+		background-color: #123456;
+		flex-basis: 70%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
+	}
+
+	#indexh2 {
+		background-color: #807f7f;
+		flex-basis: 70%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 1;
+	}
+
+	#hamnav {
+		display: flex;
+		flex-basis: 0%;
+		flex-grow: 0;
+		flex-shrink: 0;
+		order: 1;
+
+	}
+
+	#indexVideo {
+		display: none;
+		background-color: #4deeea;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+
+	}
+
+	.videoFormat {
+		display: none;
+		width: 480px;
+		height: 360px;
+		margin-left: 100px;
+
+
+	}
+
+	.flexParent {
+		display: flex;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-direction: column;
+		background-color: #ffffff;
+	}
+
+	.articleText {
+		background-color: transparent;
+	}
+
+	#firstChild {
+		display: flex;
+		flex-basis: 60%;
+		letter-spacing: 0.5em;
+		flex-grow: 1;
+		flex-shrink: 1;
+		background-color: #74ee15;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 5;
+	}
+
+	#secondChild {
+		display: flex;
+		flex-basis: 60%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		line-height: 200%;
+		background-color: #ffe700;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 6;
+	}
+
+	#thirdChild {
+		display: flex;
+		flex-basis: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		text-indent: 50px;
+		background-color: #FFC72B;
+		flex-grow: 1;
+		flex-shrink: 1;
+		order: 7;
+	}
+
+	.imgFlex {
+		width: 200px;
+		float: right;
+		clear: both;
+		position: relative;
+
+	}
+
+	#upcomingSection {
+		display: flex;
+		flex-basis: 100%;
+		background-color: #f000ff;
+		flex-grow: 1;
+		flex-shrink: 1;
+		word-spacing: 15px;
+		order: 4;
+		height: 400px;
+	}
+
+	footer {
+		display: flex;
+		order: 8;
+	}
+
 
 	/* bestdestinations.html MOBILE */
 	#bestdestinations-grid-container {
@@ -1119,10 +1418,6 @@ body {
 		grid-area: menuTag;
 		display: flex;
 		flex-direction: column;
-	}
-
-	.contactFieldset {
-		/* grid-area: fieldTag; */
 	}
 
 	.contactForm {
