@@ -34,8 +34,8 @@ body {
 	background-color: #8bc34a;
 }
 
-ul+li {
-	background-color: hotpink;
+#article1+#article2 {
+	line-height: 1em;
 }
 
 ul>li {
