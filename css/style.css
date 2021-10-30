@@ -1,6 +1,36 @@
-tr:nth-child(even) {
-	background-color: #dddddd;
+/* latin */
+@font-face {
+	font-family: 'Notable';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/notable/v9/gNMEW3N_SIqx-WX9yHQiFQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
+tr:nth-child(even) {
+	background-color: #CFF;
+}
+
+tr:nth-child(odd) {
+	background-color: #FFF;
+}
+
+th:first-child {
+	background-color: #FF0;
+}
+
+ul>li {
+
+	color: gold;
+}
+
+h3+h4 {
+	font-family: 'Notable';
+	color: rgb(79, 9, 170);
+}
+
+#firstLetter::first-letter {
+	font-size: 400%;
 }
 
 /* [ON BIG SCREEN] */
@@ -47,6 +77,7 @@ body {
 	color: #FFF;
 	opacity: 50%;
 	background-color: #FA0;
+	z-index: 9999;
 }
 
 /* Responsive layout - pc */
@@ -126,12 +157,10 @@ body {
 
 	.flexParent {
 		display: flex;
-		flex-basis: 100%;
 		flex-grow: 1;
 		flex-shrink: 1;
 		flex-direction: column;
 		background-color: #ec5d5d;
-		flex-basis: 100%;
 	}
 
 	.articleText {
@@ -140,7 +169,8 @@ body {
 
 	#firstChild {
 		display: flex;
-		flex-basis: 65%;
+		flex-basis: 60%;
+		letter-spacing: 0.5em;
 		flex-grow: 1;
 		flex-shrink: 1;
 		background-color: #FA0;
@@ -151,9 +181,10 @@ body {
 
 	#secondChild {
 		display: flex;
-		flex-basis: 65%;
+		flex-basis: 60%;
 		flex-grow: 1;
 		flex-shrink: 1;
+		line-height: 200%;
 		background-color: rgb(167, 113, 7);
 		flex-grow: 1;
 		flex-shrink: 1;
@@ -165,6 +196,7 @@ body {
 		flex-basis: 100%;
 		flex-grow: 1;
 		flex-shrink: 1;
+		text-indent: 50px;
 		background-color: rgb(85, 58, 3);
 		flex-grow: 1;
 		flex-shrink: 1;
@@ -181,10 +213,12 @@ body {
 
 	#upcomingSection {
 		display: flex;
-		background-color: #ff0000;
-		flex-grow: 0;
-		flex-shrink: 0;
-		order: 4;
+		flex-basis: 100%;
+		background-color: #FFC72B;
+		flex-grow: 1;
+		flex-shrink: 1;
+		word-spacing: 15px;
+		order: 5;
 		height: 400px;
 	}
 
@@ -407,7 +441,7 @@ body {
 
 
 
-	/*Contact.html*/
+	/*Contact.html PC */
 	#contact-grid-container {
 		width: 100%;
 		display: grid;
